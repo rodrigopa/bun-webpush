@@ -1,0 +1,26 @@
+{
+  "name": "wpush",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "client:build": "rm -rf client/dist && bun build client/src/index.html client/src/sw.ts --minify --outdir=client/dist --env=inline",
+    "server:start": "bun server",
+    "server:start:cluster": "bun server/cluster.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@biomejs/biome": "^2.0.6",
+    "@types/web-push": "^3.6.4",
+    "bowser": "^2.11.0",
+    "kysely": "^0.28.2",
+    "uuid-by-string": "^4.0.0",
+    "web-push": "^3.6.7",
+    "zod": "^3.25.71"
+  }
+}

@@ -1,5 +1,9 @@
 # wpush
 
+### Web push notifications server and client
+
+Use a VAPID keys to manage your subscribers and send push notifications to them.
+
 To install dependencies:
 
 ```bash
